@@ -1,0 +1,286 @@
+:root {
+  --primary-padding: 5.2vw;
+  --secondry-padding: 3em;
+  --block-padding: 5em;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Ot-light";
+}
+
+#main {
+  background-color: #efeded;
+}
+
+.home {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  z-index: 99;
+  background-color: #f9f8f9;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.radius-container {
+  padding-top: var(--secondry-padding);
+  background-color: #efeded;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7vh;
+  padding-inline: var(--primary-padding);
+}
+
+li:hover {
+  text-decoration: underline;
+}
+
+.mail-sp {
+  font-size: 0.8em;
+  font-family: "Ot-medium";
+}
+
+.min-capsule {
+  outline: none;
+  border: none;
+  background: #fff;
+  height: 5vh;
+  border-radius: 20px;
+  width: 6vw;
+}
+
+.radius-container {
+  height: 90vh;
+}
+
+.hero {
+  padding-block: var(--primary-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8vw;
+  line-height: 4.5vw;
+}
+
+.hero img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero .hero-img-container {
+  height: 9em;
+  width: 9em;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.marquee {
+  position: static;
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding: 5em 0 8em 0;
+  z-index: 9;
+}
+
+.marquee img {
+  margin: 0 3.3em;
+  width: 10em;
+  vertical-align: middle;
+}
+
+.marquee .elem {
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.about {
+  text-align: center;
+  padding-block: var(--block-padding);
+}
+
+.about h2 {
+  margin: auto;
+  width: fit-content;
+  border-bottom: solid #252525;
+  border-width: thin;
+  padding-bottom: var(--secondry-padding);
+}
+
+.works .rot-btn {
+  background-color: #f9f8f9;
+  color: #363636;
+  position: absolute;
+  top: -5%;
+  left: 46%;
+  transform: rotate(-15deg);
+}
+
+.works {
+  position: relative;
+}
+
+.elem-container {
+  padding: 5em 0 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 13em;
+  text-align: left;
+}
+
+.about img {
+  width: 40px;
+}
+
+h4 {
+  padding: 1.1em 0 0.9em 0;
+  font-weight: 200;
+  border-bottom: #000;
+}
+
+.main-footer {
+  background-color: #f9f8f9;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+footer img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-footer {
+  padding: 5em 0 3em 0;
+}
+
+.footer-img-container {
+  height: 7em;
+  width: 7em;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.footer-btns {
+  text-align: center;
+  padding-block: var(--secondry-padding);
+}
+
+.footer-btns .capsule-white {
+  border: 1px solid gray;
+}
+
+.end-pc {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-inline: var(--primary-padding);
+}
+
+.link-icons a {
+  background-color: #fff;
+  padding: 0.6em 0.7em;
+  border-radius: 50%;
+  margin-left: 10px;
+  border: 5px solid #f0f1ef;
+}
+
+.link-icons {
+  display: none;
+}
+
+@media (max-width: 802px) {
+  .pc {
+    display: none;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    letter-spacing: 0.01vw;
+    line-height: 1.5;
+  }
+
+  .marquee {
+    padding: 3em 0 6em 0;
+  }
+
+  .elem-container {
+    padding-top: 6em;
+    gap: 20px;
+  }
+
+  .link-icons {
+    display: block;
+  }
+
+  .end-links {
+    display: none;
+  }
+
+  .work {
+    width: 10em;
+    text-align: left;
+  }
+
+  .rot-btn {
+    left: 40%;
+  }
+}
+
+@media (max-width: 423px) {
+  nav .capsule {
+    padding: 2vw 3vw;
+    font-size: 3vw;
+  }
+  .copyright {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 332px) {
+  nav {
+    padding: 0;
+  }
+}
