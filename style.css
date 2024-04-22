@@ -291,3 +291,11 @@ footer img {
     padding: 0;
   }
 }
+
+@media (max-height: 774px) {
+  .hero {
+    padding-block: var(--secondry-padding);
+    gap: 1em;
+    line-height: 5em;
+  }
+}
