@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Ot-regular";
+  src: url(./fonts/OttercoDisplay-Regular.woff2);
+}
+
+@font-face {
+  font-family: "Ot-medium";
+  src: url(./fonts/OttercoDisplay-Medium.woff2);
+}
+
+@font-face {
+  font-family: "Ot-light";
+  src: url(./fonts/Otterco-Regular.woff2);
+}
